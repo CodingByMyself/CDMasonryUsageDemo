@@ -12,9 +12,16 @@
 		370A7D601FDFCE7900A7157F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 370A7D5F1FDFCE7900A7157F /* main.m */; };
 		370A7D681FDFCF5400A7157F /* CDMainTestVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 370A7D671FDFCF5400A7157F /* CDMainTestVCViewController.m */; };
 		370A7D6B1FDFD18600A7157F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370A7D6A1FDFD18600A7157F /* Images.xcassets */; };
+		370A7D6F1FDFD57C00A7157F /* CDBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 370A7D6E1FDFD57C00A7157F /* CDBaseTableViewCell.m */; };
+		370A7D731FDFD60B00A7157F /* CDAutoCountHeightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 370A7D721FDFD60B00A7157F /* CDAutoCountHeightVC.m */; };
+		370A7D761FDFD63D00A7157F /* CDAutoTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 370A7D751FDFD63D00A7157F /* CDAutoTestCell.m */; };
+		370A7D781FDFDAF000A7157F /* dataSourceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 370A7D771FDFDAF000A7157F /* dataSourceList.plist */; };
+		9AA35386D02C0FAF086639C3 /* libPods-CDMasonryUsageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6626ED36AFE8F2A8B37E174 /* libPods-CDMasonryUsageDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C00F9847A89C9F1DD27780E /* Pods-CDMasonryUsageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDMasonryUsageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDMasonryUsageDemo/Pods-CDMasonryUsageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0DBCE6B0978A4375D2C68987 /* Pods-CDMasonryUsageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDMasonryUsageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDMasonryUsageDemo/Pods-CDMasonryUsageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		370A7D4D1FDFCE7900A7157F /* CDMasonryUsageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDMasonryUsageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		370A7D501FDFCE7900A7157F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		370A7D511FDFCE7900A7157F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +31,14 @@
 		370A7D661FDFCF5400A7157F /* CDMainTestVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMainTestVCViewController.h; sourceTree = "<group>"; };
 		370A7D671FDFCF5400A7157F /* CDMainTestVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMainTestVCViewController.m; sourceTree = "<group>"; };
 		370A7D6A1FDFD18600A7157F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		370A7D6D1FDFD57C00A7157F /* CDBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDBaseTableViewCell.h; sourceTree = "<group>"; };
+		370A7D6E1FDFD57C00A7157F /* CDBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDBaseTableViewCell.m; sourceTree = "<group>"; };
+		370A7D711FDFD60B00A7157F /* CDAutoCountHeightVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAutoCountHeightVC.h; sourceTree = "<group>"; };
+		370A7D721FDFD60B00A7157F /* CDAutoCountHeightVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAutoCountHeightVC.m; sourceTree = "<group>"; };
+		370A7D741FDFD63D00A7157F /* CDAutoTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAutoTestCell.h; sourceTree = "<group>"; };
+		370A7D751FDFD63D00A7157F /* CDAutoTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAutoTestCell.m; sourceTree = "<group>"; };
+		370A7D771FDFDAF000A7157F /* dataSourceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dataSourceList.plist; sourceTree = "<group>"; };
+		A6626ED36AFE8F2A8B37E174 /* libPods-CDMasonryUsageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDMasonryUsageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA35386D02C0FAF086639C3 /* libPods-CDMasonryUsageDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1476C8EAE04BC92D5665F80C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6626ED36AFE8F2A8B37E174 /* libPods-CDMasonryUsageDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		370A7D441FDFCE7900A7157F = {
 			isa = PBXGroup;
 			children = (
 				370A7D4F1FDFCE7900A7157F /* CDMasonryUsageDemo */,
 				370A7D4E1FDFCE7900A7157F /* Products */,
+				8BF8C9E62B4294665686CCED /* Pods */,
+				1476C8EAE04BC92D5665F80C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +82,13 @@
 		370A7D4F1FDFCE7900A7157F /* CDMasonryUsageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				370A7D701FDFD5BF00A7157F /* 自动计算高度 */,
 				370A7D501FDFCE7900A7157F /* AppDelegate.h */,
 				370A7D511FDFCE7900A7157F /* AppDelegate.m */,
 				370A7D661FDFCF5400A7157F /* CDMainTestVCViewController.h */,
 				370A7D671FDFCF5400A7157F /* CDMainTestVCViewController.m */,
 				370A7D5E1FDFCE7900A7157F /* Info.plist */,
+				370A7D6C1FDFD57C00A7157F /* libs */,
 				370A7D691FDFCF7300A7157F /* other */,
 				370A7D6A1FDFD18600A7157F /* Images.xcassets */,
 			);
@@ -76,6 +104,36 @@
 			path = other;
 			sourceTree = "<group>";
 		};
+		370A7D6C1FDFD57C00A7157F /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				370A7D6D1FDFD57C00A7157F /* CDBaseTableViewCell.h */,
+				370A7D6E1FDFD57C00A7157F /* CDBaseTableViewCell.m */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		370A7D701FDFD5BF00A7157F /* 自动计算高度 */ = {
+			isa = PBXGroup;
+			children = (
+				370A7D771FDFDAF000A7157F /* dataSourceList.plist */,
+				370A7D711FDFD60B00A7157F /* CDAutoCountHeightVC.h */,
+				370A7D721FDFD60B00A7157F /* CDAutoCountHeightVC.m */,
+				370A7D741FDFD63D00A7157F /* CDAutoTestCell.h */,
+				370A7D751FDFD63D00A7157F /* CDAutoTestCell.m */,
+			);
+			path = "自动计算高度";
+			sourceTree = "<group>";
+		};
+		8BF8C9E62B4294665686CCED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DBCE6B0978A4375D2C68987 /* Pods-CDMasonryUsageDemo.debug.xcconfig */,
+				0C00F9847A89C9F1DD27780E /* Pods-CDMasonryUsageDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 370A7D631FDFCE7900A7157F /* Build configuration list for PBXNativeTarget "CDMasonryUsageDemo" */;
 			buildPhases = (
+				ADBB3338AF342619CF29C6A8 /* [CP] Check Pods Manifest.lock */,
 				370A7D491FDFCE7900A7157F /* Sources */,
 				370A7D4A1FDFCE7900A7157F /* Frameworks */,
 				370A7D4B1FDFCE7900A7157F /* Resources */,
+				9C855CC0D8F35A11E9892969 /* [CP] Embed Pods Frameworks */,
+				449A190CF46899DDE8E7C66C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,18 +196,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				370A7D5A1FDFCE7900A7157F /* Assets.xcassets in Resources */,
+				370A7D781FDFDAF000A7157F /* dataSourceList.plist in Resources */,
 				370A7D6B1FDFD18600A7157F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		449A190CF46899DDE8E7C66C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDMasonryUsageDemo/Pods-CDMasonryUsageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C855CC0D8F35A11E9892969 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDMasonryUsageDemo/Pods-CDMasonryUsageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBB3338AF342619CF29C6A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDMasonryUsageDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		370A7D491FDFCE7900A7157F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370A7D731FDFD60B00A7157F /* CDAutoCountHeightVC.m in Sources */,
 				370A7D601FDFCE7900A7157F /* main.m in Sources */,
+				370A7D6F1FDFD57C00A7157F /* CDBaseTableViewCell.m in Sources */,
+				370A7D761FDFD63D00A7157F /* CDAutoTestCell.m in Sources */,
 				370A7D681FDFCF5400A7157F /* CDMainTestVCViewController.m in Sources */,
 				370A7D521FDFCE7900A7157F /* AppDelegate.m in Sources */,
 			);
@@ -261,6 +377,7 @@
 		};
 		370A7D641FDFCE7900A7157F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBCE6B0978A4375D2C68987 /* Pods-CDMasonryUsageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -277,6 +394,7 @@
 		};
 		370A7D651FDFCE7900A7157F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C00F9847A89C9F1DD27780E /* Pods-CDMasonryUsageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>home_know_btn1</string>
+		<key>title</key>
+		<string>便捷的黄金购买平台</string>
+		<key>detail</key>
+		<string>关注微信公众号&quot;金度黄金&quot;,
+点击&quot;买黄金&quot;即可方便快捷购买黄金。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>home_long_icon</string>
+		<key>title</key>
+		<string>大众化的黄金购买门槛</string>
+		<key>detail</key>
+		<string>你每次1克2克甚至0.01克购买黄金，
+黄金投资门槛大幅降低，
+黄金投资不再望金兴叹。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>home_know_btn3</string>
+		<key>title</key>
+		<string>极具优势的黄金购买价格</string>
+		<key>detail</key>
+		<string>黄金价格直接与上海黄金交易所接轨，
+基本是以黄金的原料价格购买黄金，
+远低于市场零售价格，
+是黄金投资理财的首选平台。黄金价格直接与上海黄金交易所接轨，
+基本是以黄金的原料价格购买黄金，
+远低于市场零售价格，
+是黄金投资理财的首选平台。黄金价格直接与上海黄金交易所接轨，
+基本是以黄金的原料价格购买黄金，
+远低于市场零售价格，
+是黄金投资理财的首选平台。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>home_know_btn5</string>
+		<key>title</key>
+		<string>方便快捷的黄金提取通道</string>
+		<key>detail</key>
+		<string>你可以通过到店自取或邮寄的两种方式快速拿到标准规格的黄金金条，
+黄金提取安全有保障，提金更快捷。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>home_know_btn2</string>
+		<key>title</key>
+		<string>大众化的黄金购买门槛数据</string>
+		<key>detail</key>
+		<string>你每次1克2克甚至0.01克购买黄金，
+黄金投资门槛大幅降低，
+黄金投资不再望金兴叹。你每次1克2克甚至0.01克购买黄金，
+黄金投资门槛大幅降低，
+黄金投资不再望金兴叹。你每次1克2克甚至0.01克购买黄金，
+黄金投资门槛大幅降低，
+黄金投资不再望金兴叹。你每次1克2克甚至0.01克购买黄金，
+黄金投资门槛大幅降低，
+黄金投资不再望金兴叹。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>home_know_btn4</string>
+		<key>title</key>
+		<string>极富创意的黄金新玩法</string>
+		<key>detail</key>
+		<string>你可以直接把账户的黄金通过红包的方式发给自己的亲朋好友。</string>
+	</dict>
+</array>
+</plist>
