@@ -9,11 +9,12 @@
 #import "CDMainTestVCViewController.h"
 #import "CDAutoCountHeightVC.h"
 #import "CDBaseTableViewCell.h"
+#import "AQAnimationsUsageVC.h"
 #import "Masonry.h"
 
 @interface CDMainTestVCViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tabelViewMain;
-@property (nonatomic,strong) NSArray <UIViewController *> *funcViewControllers;
+@property (nonatomic,strong) NSMutableArray <UIViewController *> *funcViewControllers;
 @end
 
 @implementation CDMainTestVCViewController
@@ -33,7 +34,12 @@
 {
     CDAutoCountHeightVC *autoVC = [[CDAutoCountHeightVC alloc] init];
     autoVC.title = @"Masonry自动计算高度";
-    self.funcViewControllers = @[autoVC];
+    [self.funcViewControllers addObject:autoVC];
+    
+    AQAnimationsUsageVC *animationVC = [[AQAnimationsUsageVC alloc] init];
+    animationVC.title = @"动画使用";
+    [self.funcViewControllers addObject:animationVC];
+    
 }
 
 #pragma mark - UITableView Delegate Method
@@ -90,5 +96,15 @@
     }
     return _tabelViewMain;
 }
+
+- (NSMutableArray <UIViewController *> *)funcViewControllers
+{
+    if (_funcViewControllers == nil) {
+        _funcViewControllers = [[NSMutableArray alloc] init];
+    }
+    return _funcViewControllers;
+}
+
+
 
 @end

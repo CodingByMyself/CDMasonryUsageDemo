@@ -23,6 +23,8 @@
     
 }
 
+
+#pragma mark - Setter Method
 - (void)setItem:(NSDictionary *)item
 {
     _item = item;
@@ -38,16 +40,17 @@
     //    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, self.detailLabel.text.length)];
     //
     //    self.detailLabel.attributedText = attributedString;
-    
 }
 
+
+#pragma mark - Getter Method
 - (UIImageView *)imgviewlogo
 {
     if (_imgviewlogo == nil) {
         _imgviewlogo = [[UIImageView alloc] init];
         _imgviewlogo.contentMode = UIViewContentModeScaleAspectFit;
         [self.contentView addSubview:_imgviewlogo];
-        [_imgviewlogo mas_remakeConstraints:^(MASConstraintMaker *make) {
+        [_imgviewlogo mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.contentView);
             make.left.equalTo(self.contentView).offset(15.0);
             make.width.height.equalTo(@70);
@@ -65,7 +68,7 @@
         _titleLabel.textColor = [UIColor colorWithRed:251.0/255 green:177.0/255 blue:84.0/255 alpha:1.0];
         _titleLabel.font = [UIFont systemFontOfSize:18.0];
         [self.contentView addSubview:_titleLabel];
-        [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(15.0);
             make.left.equalTo(self.imgviewlogo.mas_right).offset(15.0);
             make.right.equalTo(self.contentView).offset(-15.0);
@@ -84,7 +87,7 @@
         _detailLabel.font = [UIFont systemFontOfSize:13.0];
         _detailLabel.textColor = [UIColor colorWithRed:72.0/255 green:68.0/255 blue:69.0/255 alpha:1.0];
         [self.contentView addSubview:_detailLabel];
-        [_detailLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        [_detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.titleLabel.mas_bottom).offset(10.0);
             make.left.equalTo(self.imgviewlogo.mas_right).offset(20.0);
             make.right.equalTo(self.contentView).offset(-20.0);

@@ -20,7 +20,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[CDMainTestVCViewController alloc] init]];
-    
+    [nav.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [nav.navigationBar setTintColor:[UIColor darkGrayColor]];
     self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
