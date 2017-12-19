@@ -17,6 +17,8 @@
 		370A7D761FDFD63D00A7157F /* CDAutoTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 370A7D751FDFD63D00A7157F /* CDAutoTestCell.m */; };
 		370A7D781FDFDAF000A7157F /* dataSourceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 370A7D771FDFDAF000A7157F /* dataSourceList.plist */; };
 		37A70DBD1FE8A91200CC7592 /* AQAnimationsUsageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A70DBC1FE8A91200CC7592 /* AQAnimationsUsageVC.m */; };
+		37A70DC11FE9025200CC7592 /* AQMasnoryUsageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A70DC01FE9025200CC7592 /* AQMasnoryUsageVC.m */; };
+		37A70DC51FE9203200CC7592 /* CDConstraintsPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A70DC41FE9203200CC7592 /* CDConstraintsPriorityVC.m */; };
 		9AA35386D02C0FAF086639C3 /* libPods-CDMasonryUsageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6626ED36AFE8F2A8B37E174 /* libPods-CDMasonryUsageDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,11 @@
 		370A7D771FDFDAF000A7157F /* dataSourceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dataSourceList.plist; sourceTree = "<group>"; };
 		37A70DBB1FE8A91200CC7592 /* AQAnimationsUsageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AQAnimationsUsageVC.h; sourceTree = "<group>"; };
 		37A70DBC1FE8A91200CC7592 /* AQAnimationsUsageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AQAnimationsUsageVC.m; sourceTree = "<group>"; };
+		37A70DBF1FE9025200CC7592 /* AQMasnoryUsageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AQMasnoryUsageVC.h; sourceTree = "<group>"; };
+		37A70DC01FE9025200CC7592 /* AQMasnoryUsageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AQMasnoryUsageVC.m; sourceTree = "<group>"; };
+		37A70DC21FE91D8500CC7592 /* GeneralHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralHeader.h; sourceTree = "<group>"; };
+		37A70DC31FE9203200CC7592 /* CDConstraintsPriorityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDConstraintsPriorityVC.h; sourceTree = "<group>"; };
+		37A70DC41FE9203200CC7592 /* CDConstraintsPriorityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDConstraintsPriorityVC.m; sourceTree = "<group>"; };
 		A6626ED36AFE8F2A8B37E174 /* libPods-CDMasonryUsageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDMasonryUsageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +92,7 @@
 		370A7D4F1FDFCE7900A7157F /* CDMasonryUsageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				37A70DBE1FE9023700CC7592 /* Masnory使用 */,
 				37A70DBA1FE8A8B300CC7592 /* 动画 */,
 				370A7D701FDFD5BF00A7157F /* 自动计算高度 */,
 				370A7D501FDFCE7900A7157F /* AppDelegate.h */,
@@ -95,6 +103,7 @@
 				370A7D6C1FDFD57C00A7157F /* libs */,
 				370A7D691FDFCF7300A7157F /* other */,
 				370A7D6A1FDFD18600A7157F /* Images.xcassets */,
+				37A70DC21FE91D8500CC7592 /* GeneralHeader.h */,
 			);
 			path = CDMasonryUsageDemo;
 			sourceTree = "<group>";
@@ -136,6 +145,17 @@
 				37A70DBC1FE8A91200CC7592 /* AQAnimationsUsageVC.m */,
 			);
 			path = "动画";
+			sourceTree = "<group>";
+		};
+		37A70DBE1FE9023700CC7592 /* Masnory使用 */ = {
+			isa = PBXGroup;
+			children = (
+				37A70DBF1FE9025200CC7592 /* AQMasnoryUsageVC.h */,
+				37A70DC01FE9025200CC7592 /* AQMasnoryUsageVC.m */,
+				37A70DC31FE9203200CC7592 /* CDConstraintsPriorityVC.h */,
+				37A70DC41FE9203200CC7592 /* CDConstraintsPriorityVC.m */,
+			);
+			path = "Masnory使用";
 			sourceTree = "<group>";
 		};
 		8BF8C9E62B4294665686CCED /* Pods */ = {
@@ -274,10 +294,12 @@
 			files = (
 				370A7D731FDFD60B00A7157F /* CDAutoCountHeightVC.m in Sources */,
 				37A70DBD1FE8A91200CC7592 /* AQAnimationsUsageVC.m in Sources */,
+				37A70DC51FE9203200CC7592 /* CDConstraintsPriorityVC.m in Sources */,
 				370A7D601FDFCE7900A7157F /* main.m in Sources */,
 				370A7D6F1FDFD57C00A7157F /* CDBaseTableViewCell.m in Sources */,
 				370A7D761FDFD63D00A7157F /* CDAutoTestCell.m in Sources */,
 				370A7D681FDFCF5400A7157F /* CDMainTestVCViewController.m in Sources */,
+				37A70DC11FE9025200CC7592 /* AQMasnoryUsageVC.m in Sources */,
 				370A7D521FDFCE7900A7157F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

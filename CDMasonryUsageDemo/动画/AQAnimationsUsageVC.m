@@ -69,8 +69,9 @@
         {
             if (_imageViewBg == nil) {
                 [self.imageViewBg mas_updateConstraints:^(MASConstraintMaker *make) {
-                    make.height.equalTo(@100.0);
-                    make.width.equalTo(@80.0);
+//                    make.height.equalTo(@100.0);
+//                    make.width.equalTo(@80.0);
+                    make.size.mas_equalTo(CGSizeMake(80.0, 100.0));
                 }];
                 
                 [UIView animateWithDuration:0.3 animations:^{
@@ -79,8 +80,9 @@
                 
             } else {
                 [self.imageViewBg mas_updateConstraints:^(MASConstraintMaker *make) {
-                    make.height.equalTo(@1.0);
-                    make.width.equalTo(@1.0);
+//                    make.height.equalTo(@1.0);
+//                    make.width.equalTo(@1.0);
+                    make.size.mas_equalTo(CGSizeMake(1.0, 1.0));
                 }];
                 
                 [UIView animateWithDuration:0.2 animations:^{
@@ -170,8 +172,9 @@
         [_imageViewBg mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.buttonShowMenu.mas_bottom);
             make.right.equalTo(self.buttonShowMenu.mas_centerX);
-            make.height.equalTo(@1.0);
-            make.width.equalTo(@1.0);
+//            make.height.equalTo(@1.0);
+//            make.width.equalTo(@1.0);
+            make.size.mas_equalTo(CGSizeMake(1.0, 1.0));
         }];
         // 立即执行约束是控件处于指定位置（即动画的起点位置）
         [_imageViewBg.superview layoutIfNeeded];
