@@ -108,8 +108,6 @@
 				370A7D6C1FDFD57C00A7157F /* libs */,
 				370A7D691FDFCF7300A7157F /* other */,
 				370A7D6A1FDFD18600A7157F /* Images.xcassets */,
-				37A70DC21FE91D8500CC7592 /* GeneralHeader.h */,
-				37A70DCB1FE9F6EB00CC7592 /* LaunchScreen.storyboard */,
 			);
 			path = CDMasonryUsageDemo;
 			sourceTree = "<group>";
@@ -119,6 +117,8 @@
 			children = (
 				370A7D591FDFCE7900A7157F /* Assets.xcassets */,
 				370A7D5F1FDFCE7900A7157F /* main.m */,
+				37A70DC21FE91D8500CC7592 /* GeneralHeader.h */,
+				37A70DCB1FE9F6EB00CC7592 /* LaunchScreen.storyboard */,
 			);
 			path = other;
 			sourceTree = "<group>";
