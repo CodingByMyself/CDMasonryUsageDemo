@@ -13,4 +13,9 @@
 
 @property (nonatomic,strong) NSDictionary *item;
 
+
+// 当前cell类型的预估高度
++ (CGFloat)cellEstimatedHeightForTheData:(NSString *)detail;
+
+
 @end

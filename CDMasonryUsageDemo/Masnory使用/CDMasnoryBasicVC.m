@@ -60,7 +60,7 @@
 {
     if (_button2 == nil) {
         _button2 = [[UIButton alloc] init];
-        _button2.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        _button2.backgroundColor = [UIColor yellowColor];
         [_button2 setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [_button2 setTitle:@"视图2" forState:UIControlStateNormal];
         [self.view addSubview:_button2];
@@ -78,7 +78,7 @@
 {
     if (_button3 == nil) {
         _button3 = [[UIButton alloc] init];
-        _button3.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        _button3.backgroundColor = [UIColor orangeColor];
         [_button3 setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [_button3 setTitle:@"视图3" forState:UIControlStateNormal];
         [self.view addSubview:_button3];
@@ -97,7 +97,7 @@
     
     if (_button4 == nil) {
         _button4 = [[UIButton alloc] init];
-        _button4.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        _button4.backgroundColor = [UIColor cyanColor];
         [_button4 setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [_button4 setTitle:@"视图4" forState:UIControlStateNormal];
         [self.view addSubview:_button4];

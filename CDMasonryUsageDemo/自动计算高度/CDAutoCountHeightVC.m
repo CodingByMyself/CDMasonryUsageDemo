@@ -7,6 +7,7 @@
 //
 
 #import "CDAutoCountHeightVC.h"
+#import "AQAnimationsUsageVC.h"
 #import "CDAutoTestCell.h"
 
 @interface CDAutoCountHeightVC () <UITableViewDelegate,UITableViewDataSource>
@@ -28,7 +29,12 @@
     
     self.tabelViewAutoList.delegate = self;
     self.tabelViewAutoList.dataSource = self;
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tabelViewAutoList reloadData];
 }
 
 #pragma mark - UITableView Delegate Method
@@ -38,14 +44,18 @@
     
     itemCell.item = self.itemList[indexPath.row];
     
-//    [itemCell layoutIfNeeded];
-    
     return itemCell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"selected ---> %zi-%zi",indexPath.section,indexPath.row);
+//    if (indexPath.row == 1) {
+//        return 80.0;
+//    } else {
+//        return tableView.rowHeight;
+//    }
+    
+    return tableView.rowHeight;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -57,22 +67,14 @@
 - (UITableView *)tabelViewAutoList
 {
     if (_tabelViewAutoList == nil) {
-        _tabelViewAutoList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-        
-        _tabelViewAutoList.sectionFooterHeight = 0;
-        _tabelViewAutoList.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 0.1f)];
-        _tabelViewAutoList.tableFooterView = [UIView new];
+        _tabelViewAutoList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         
         _tabelViewAutoList.backgroundColor = [UIColor groupTableViewBackgroundColor];
         //        [_tabelViewMain setSeparatorStyle:UITableViewCellSeparatorStyleNone];
         
         [self.view addSubview:_tabelViewAutoList];
         [_tabelViewAutoList mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.view);
-            make.left.equalTo(self.view);
-            make.right.equalTo(self.view);
-            make.bottom.equalTo(self.view);
-            //            make.edges.equalTo(self.view);
+            make.edges.equalTo(self.view);
         }];
     }
     return _tabelViewAutoList;

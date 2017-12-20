@@ -78,7 +78,7 @@
 {
     if (_button3 == nil) {
         _button3 = [[UIButton alloc] init];
-        _button3.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        _button3.backgroundColor = [UIColor cyanColor];
         [_button3 setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [_button3 setTitle:@"视图3" forState:UIControlStateNormal];
         [self.view addSubview:_button3];

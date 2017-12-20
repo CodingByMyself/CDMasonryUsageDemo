@@ -9,19 +9,26 @@
 #import "CDAutoTestCell.h"
 
 @interface CDAutoTestCell ()
-
 @property (nonatomic,strong) UIImageView *imgviewlogo;
 @property (nonatomic,strong) UILabel *titleLabel;
 @property (nonatomic,strong) UILabel *detailLabel;
-
 @end
 
 @implementation CDAutoTestCell
 
-- (void)setup
+// 当前cell类型的预估高度
++ (CGFloat)cellEstimatedHeightForTheData:(NSString *)detail
 {
+    UILabel *detailLabel = [[UILabel alloc] init];
+    detailLabel.font = [UIFont systemFontOfSize:13.0];
+   
+    detailLabel.text = detail;
     
+    CGFloat autoEsttimated = [detailLabel textRectForBounds:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width - 15.0 - 70.0 - 20.0*2 , CGFLOAT_MAX) limitedToNumberOfLines:0].size.height;
+    
+    return autoEsttimated;
 }
+
 
 
 #pragma mark - Setter Method
@@ -34,12 +41,12 @@
     self.detailLabel.text = self.item[@"detail"];
     
     //设置行间距
-    //    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.detailLabel.text];;
-    //    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-    //    [paragraphStyle setLineSpacing:8];
-    //    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, self.detailLabel.text.length)];
-    //
-    //    self.detailLabel.attributedText = attributedString;
+//        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.detailLabel.text];;
+//        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+//        [paragraphStyle setLineSpacing:10];
+//        [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, self.detailLabel.text.length)];
+//
+//        self.detailLabel.attributedText = attributedString;
 }
 
 
@@ -49,6 +56,7 @@
     if (_imgviewlogo == nil) {
         _imgviewlogo = [[UIImageView alloc] init];
         _imgviewlogo.contentMode = UIViewContentModeScaleAspectFit;
+        
         [self.contentView addSubview:_imgviewlogo];
         [_imgviewlogo mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.contentView);
@@ -67,6 +75,7 @@
         _titleLabel.numberOfLines = 2;
         _titleLabel.textColor = [UIColor colorWithRed:251.0/255 green:177.0/255 blue:84.0/255 alpha:1.0];
         _titleLabel.font = [UIFont systemFontOfSize:18.0];
+        
         [self.contentView addSubview:_titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(15.0);
@@ -83,9 +92,9 @@
     if (_detailLabel == nil) {
         _detailLabel = [[UILabel alloc] init];
         _detailLabel.numberOfLines = 0;
-        _detailLabel.lineBreakMode = NSLineBreakByCharWrapping;
         _detailLabel.font = [UIFont systemFontOfSize:13.0];
         _detailLabel.textColor = [UIColor colorWithRed:72.0/255 green:68.0/255 blue:69.0/255 alpha:1.0];
+        
         [self.contentView addSubview:_detailLabel];
         [_detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.titleLabel.mas_bottom).offset(10.0);

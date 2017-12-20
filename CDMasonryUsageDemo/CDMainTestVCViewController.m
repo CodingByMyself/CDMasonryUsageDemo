@@ -27,8 +27,8 @@
     // Do any additional setup after loading the view.
     self.title = @"Masonry的使用";
 //    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.view.backgroundColor = [UIColor yellowColor];
-    [self setupDataSource];
+    
+    self.view.backgroundColor = [UIColor cyanColor];
     
     self.tabelViewMain.delegate = self;
     self.tabelViewMain.dataSource = self;
@@ -38,8 +38,10 @@
 {
     [super viewWillAppear:animated];
     [self setupDataSource];
+    [self.tabelViewMain reloadData];
 }
 
+#pragma mark - 数据源
 - (void)setupDataSource
 {
     [self.funcViewControllers removeAllObjects];
@@ -103,9 +105,14 @@
             make.left.equalTo(self.view);
             make.right.equalTo(self.view);
             make.bottom.equalTo(self.view);
-//            make.edges.equalTo(self.view).offset(0);
-//            make.edges.equalTo(self.view).mas_offset(UIEdgeInsetsMake(80.0, 80.0, 80.0, 80.0));
-//            make.edges.mas_offset(UIEdgeInsetsMake(100.0, 100.0, 100.0, 100.0));
+            
+//            make.edges.equalTo(self.view);  // 距离self.view四周的距离为0，这一个约束条件等同上面的四条约束
+            
+//            make.edges.equalTo(self.view).mas_offset(UIEdgeInsetsMake(80.0, 80.0, 80.0, 80.0)); // 距离四周的距离是Insets结构体描述的距离
+//            make.edges.mas_offset(UIEdgeInsetsMake(80.0, 80.0, 80.0, 80.0)); // 可以省去指定的视图对象，默认是当前视图的父视图；
+            /*
+             注意：如果直接添加make.edges.equalTo(self.view).offset(80);这个约束效果不等同make.edges.equalTo(self.view).mas_offset(UIEdgeInsetsMake(80.0, 80.0, 80.0, 80.0))，因为offset这个方法的入参描述的值都是相对一个布局坐标方向的，所以前面的约束会使得整个视图往坐标两个正向的方向偏移
+             */
         }];
     }
     return _tabelViewMain;
