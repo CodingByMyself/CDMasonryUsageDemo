@@ -12,6 +12,7 @@
 #import "AQAnimationsUsageVC.h"
 #import "AQMasnoryUsageVC.h"
 #import "CDConstraintsPriorityVC.h"
+#import "CDMasnoryBasicVC.h"
 #import "Masonry.h"
 
 @interface CDMainTestVCViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -43,6 +44,18 @@
 {
     [self.funcViewControllers removeAllObjects];
     
+    CDMasnoryBasicVC *basicVC = [[CDMasnoryBasicVC alloc] init];
+    basicVC.title = @"Masnory使用 - 基础用法";
+    [self.funcViewControllers addObject:basicVC];
+    
+    CDConstraintsPriorityVC *priorityVC = [[CDConstraintsPriorityVC alloc] init];
+    priorityVC.title = @"Masnory使用 - 约束优先级";
+    [self.funcViewControllers addObject:priorityVC];
+    
+    AQMasnoryUsageVC *masnoryUsageVC = [[AQMasnoryUsageVC alloc] init];
+    masnoryUsageVC.title = @"Masnory使用 - 数组分类扩展";
+    [self.funcViewControllers addObject:masnoryUsageVC];
+    
     CDAutoCountHeightVC *autoVC = [[CDAutoCountHeightVC alloc] init];
     autoVC.title = @"Masonry自动计算高度";
     [self.funcViewControllers addObject:autoVC];
@@ -50,14 +63,6 @@
     AQAnimationsUsageVC *animationVC = [[AQAnimationsUsageVC alloc] init];
     animationVC.title = @"动画使用";
     [self.funcViewControllers addObject:animationVC];
-    
-    AQMasnoryUsageVC *masnoryUsageVC = [[AQMasnoryUsageVC alloc] init];
-    masnoryUsageVC.title = @"Masnory使用 - 数组分类扩展";
-    [self.funcViewControllers addObject:masnoryUsageVC];
-    
-    CDConstraintsPriorityVC *priorityVC = [[CDConstraintsPriorityVC alloc] init];
-    priorityVC.title = @"Masnory使用 - 约束优先级";
-    [self.funcViewControllers addObject:priorityVC];
 }
 
 #pragma mark - UITableView Delegate Method
