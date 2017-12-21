@@ -10,11 +10,13 @@
 #import "Masonry.h"
 
 @interface CDMasnoryBasicVC ()
+
 @property (nonatomic,strong) UIButton *button1;
 @property (nonatomic,strong) UIButton *button2;
 @property (nonatomic,strong) UIButton *button3;
 @property (nonatomic,strong) UIButton *button4;
 @property (nonatomic,strong) UIButton *button4_Subview;
+
 @end
 
 @implementation CDMasnoryBasicVC
@@ -32,7 +34,8 @@
 //    [self.button3 setTitle:@"视图3" forState:UIControlStateNormal];
     
     [self.button4 setTitle:@"视图" forState:UIControlStateNormal];
-    [self.button4_Subview setTitle:@"子视图" forState:UIControlStateNormal];
+    
+//    [self.button4_Subview setTitle:@"子视图" forState:UIControlStateNormal];
 }
 
 
@@ -133,7 +136,7 @@
         [_button4 mas_makeConstraints:^(MASConstraintMaker *make) {
 //            make.top.equalTo(self.view);
             make.top.equalTo(self.mas_topLayoutGuide); // mas_topLayoutGuide属性是Masonry针对UIViewController的扩展属性用来检测导航栏存在时动态偏移（类似安全距离）
-            make.left.equalTo(self.view);
+            make.left.equalTo(self.view).offset(0);
             make.right.equalTo(self.view);
 //            make.bottom.equalTo(self.view);
             make.bottom.equalTo(self.mas_bottomLayoutGuide); // mas_bottomLayoutGuide属性是Masonry针对UIViewController的扩展属性用来检测tabBar存在时动态偏移（类似安全距离）

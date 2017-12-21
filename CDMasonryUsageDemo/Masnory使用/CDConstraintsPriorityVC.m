@@ -44,10 +44,10 @@
         [_button1 setTitle:@"视图1" forState:UIControlStateNormal];
         [self.view addSubview:_button1];
         [_button1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.equalTo(@60.0);
             make.left.equalTo(self.view).offset(20.0);
             make.right.equalTo(self.view).offset(-20.0);
             make.top.equalTo(self.mas_topLayoutGuide).offset(50.0);
-            make.height.equalTo(@60.0);
         }];
     }
     return _button1;
@@ -62,13 +62,14 @@
         [_button2 setTitle:@"视图2" forState:UIControlStateNormal];
         [self.view addSubview:_button2];
         [_button2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.equalTo(@60.0);
             make.left.equalTo(self.view).offset(20.0);
             make.right.equalTo(self.view).offset(-20.0);
-//            make.top.equalTo(_button1.mas_bottom).offset(10.0).priorityHigh();
-//            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priorityLow();
-            make.top.equalTo(_button1.mas_bottom).offset(10.0);
-            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priority(1);
-            make.height.equalTo(@60.0);
+            make.top.equalTo(_button1.mas_bottom).offset(10.0).priorityHigh();
+            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priorityLow();
+//            make.top.equalTo(_button1.mas_bottom).offset(10.0);
+//            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priority(1);
+            
         }];
     }
     return _button2;
@@ -83,15 +84,16 @@
         [_button3 setTitle:@"视图3" forState:UIControlStateNormal];
         [self.view addSubview:_button3];
         [_button3 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.equalTo(@60.0);
             make.left.equalTo(self.view).offset(20.0);
             make.right.equalTo(self.view).offset(-20.0);
-//            make.top.equalTo(_button2.mas_bottom).offset(10.0).priorityHigh();
-//            make.top.equalTo(_button1.mas_bottom).offset(10.0).priorityMedium();
-//            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priorityLow();
-            make.top.equalTo(_button2.mas_bottom).offset(10.0);
-            make.top.equalTo(_button1.mas_bottom).offset(10.0).priority(2);
-            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priority(1);
-            make.height.equalTo(@60.0);
+            make.top.equalTo(_button2.mas_bottom).offset(10.0).priorityHigh();
+            make.top.equalTo(_button1.mas_bottom).offset(10.0).priorityMedium();
+            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priorityLow();
+//            make.top.equalTo(_button2.mas_bottom).offset(10.0);
+//            make.top.equalTo(_button1.mas_bottom).offset(10.0).priority(2);
+//            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priority(1);
+            
         }];
     }
     return _button3;
