@@ -13,6 +13,7 @@
 #import "AQMasnoryUsageVC.h"
 #import "CDConstraintsPriorityVC.h"
 #import "CDMasnoryBasicVC.h"
+#import "CDMasonryDebugModeVC.h"
 #import "Masonry.h"
 
 @interface CDMainTestVCViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -64,12 +65,16 @@
     [self.funcViewControllers addObject:masnoryUsageVC];
     
     CDAutoCountHeightVC *autoVC = [[CDAutoCountHeightVC alloc] init];
-    autoVC.title = @"Masonry自动计算高度";
+    autoVC.title = @"Masnory使用 - 自动计算Cell高度";
     [self.funcViewControllers addObject:autoVC];
     
     AQAnimationsUsageVC *animationVC = [[AQAnimationsUsageVC alloc] init];
-    animationVC.title = @"动画使用";
+    animationVC.title = @"Masnory使用 - 动画";
     [self.funcViewControllers addObject:animationVC];
+    
+    CDMasonryDebugModeVC *debugVC = [[CDMasonryDebugModeVC alloc] init];
+    debugVC.title = @"Masnory使用 - Debug模式";
+    [self.funcViewControllers addObject:debugVC];
 }
 
 #pragma mark - UITableView Delegate Method

@@ -19,6 +19,7 @@
 
 @implementation CDMasnoryBasicVC
 
+#pragma mark - View
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -30,7 +31,7 @@
 //
 //    [self.button3 setTitle:@"视图3" forState:UIControlStateNormal];
     
-    [self.button4 setTitle:@"视图4" forState:UIControlStateNormal];
+    [self.button4 setTitle:@"视图" forState:UIControlStateNormal];
     [self.button4_Subview setTitle:@"子视图" forState:UIControlStateNormal];
 }
 
@@ -153,6 +154,8 @@
     return _button4;
 }
 
+#pragma mark -
+
 - (UIButton *)button4_Subview
 {
     
@@ -165,16 +168,16 @@
         [_button4_Subview setTitle:@"子视图" forState:UIControlStateNormal];
         [self.button4 addSubview:_button4_Subview];
         [_button4_Subview mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(self.button4);
-//            make.left.equalTo(self.button4);
-//            make.right.equalTo(self.button4);
-//            make.bottom.equalTo(self.button4);
+            make.top.equalTo(self.button4);
+            make.left.equalTo(self.button4);
+            make.right.equalTo(self.button4);
+            make.bottom.equalTo(self.button4);
             
 //             make.edges.equalTo(self.button4);  // 距离self.view四周的距离为0，这一个约束条件等同上面的四条约束
             
             // 如果想要距离父视图四周有一定距离，可以用一下方法约束：
-             make.edges.equalTo(self.button4).mas_offset(UIEdgeInsetsMake(80.0, 80.0, 80.0, 80.0)); // 距离四周的距离是Insets结构体描述的距离
-             make.edges.mas_offset(UIEdgeInsetsMake(80.0, 80.0, 80.0, 80.0)); // 可以省去指定的视图对象，默认是当前视图的父视图，等同👆；
+//             make.edges.equalTo(self.button4).mas_offset(UIEdgeInsetsMake(80.0, 80.0, 80.0, 80.0)); // 距离四周的距离是Insets结构体描述的距离
+//             make.edges.mas_offset(UIEdgeInsetsMake(80.0, 80.0, 80.0, 80.0)); // 可以省去指定的视图对象，默认是当前视图的父视图，等同👆；
             
             
             /*

@@ -21,6 +21,7 @@
 		37A70DC51FE9203200CC7592 /* CDConstraintsPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A70DC41FE9203200CC7592 /* CDConstraintsPriorityVC.m */; };
 		37A70DC81FE9EDA500CC7592 /* CDMasnoryBasicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A70DC71FE9EDA500CC7592 /* CDMasnoryBasicVC.m */; };
 		37A70DCC1FE9F6EB00CC7592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A70DCB1FE9F6EB00CC7592 /* LaunchScreen.storyboard */; };
+		37EC8BA61FEB44520061B32D /* CDMasonryDebugModeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EC8BA51FEB44520061B32D /* CDMasonryDebugModeVC.m */; };
 		9AA35386D02C0FAF086639C3 /* libPods-CDMasonryUsageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6626ED36AFE8F2A8B37E174 /* libPods-CDMasonryUsageDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		37A70DC61FE9EDA500CC7592 /* CDMasnoryBasicVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMasnoryBasicVC.h; sourceTree = "<group>"; };
 		37A70DC71FE9EDA500CC7592 /* CDMasnoryBasicVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMasnoryBasicVC.m; sourceTree = "<group>"; };
 		37A70DCB1FE9F6EB00CC7592 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37EC8BA41FEB44520061B32D /* CDMasonryDebugModeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMasonryDebugModeVC.h; sourceTree = "<group>"; };
+		37EC8BA51FEB44520061B32D /* CDMasonryDebugModeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMasonryDebugModeVC.m; sourceTree = "<group>"; };
 		A6626ED36AFE8F2A8B37E174 /* libPods-CDMasonryUsageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDMasonryUsageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +165,8 @@
 				37A70DC41FE9203200CC7592 /* CDConstraintsPriorityVC.m */,
 				37A70DBF1FE9025200CC7592 /* AQMasnoryUsageVC.h */,
 				37A70DC01FE9025200CC7592 /* AQMasnoryUsageVC.m */,
+				37EC8BA41FEB44520061B32D /* CDMasonryDebugModeVC.h */,
+				37EC8BA51FEB44520061B32D /* CDMasonryDebugModeVC.m */,
 			);
 			path = "Masnory使用";
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 			files = (
 				370A7D731FDFD60B00A7157F /* CDAutoCountHeightVC.m in Sources */,
 				37A70DBD1FE8A91200CC7592 /* AQAnimationsUsageVC.m in Sources */,
+				37EC8BA61FEB44520061B32D /* CDMasonryDebugModeVC.m in Sources */,
 				37A70DC51FE9203200CC7592 /* CDConstraintsPriorityVC.m in Sources */,
 				370A7D601FDFCE7900A7157F /* main.m in Sources */,
 				370A7D6F1FDFD57C00A7157F /* CDBaseTableViewCell.m in Sources */,
