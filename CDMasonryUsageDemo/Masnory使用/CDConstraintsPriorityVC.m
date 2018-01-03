@@ -65,10 +65,10 @@
             make.height.equalTo(@60.0);
             make.left.equalTo(self.view).offset(20.0);
             make.right.equalTo(self.view).offset(-20.0);
-            make.top.equalTo(_button1.mas_bottom).offset(10.0).priorityHigh();
-            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priorityLow();
 //            make.top.equalTo(_button1.mas_bottom).offset(10.0);
-//            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priority(1);
+//            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priorityLow();
+            make.top.equalTo(_button1.mas_bottom).offset(10.0).priority(3);
+            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priority(1);
             
         }];
     }
@@ -87,12 +87,12 @@
             make.height.equalTo(@60.0);
             make.left.equalTo(self.view).offset(20.0);
             make.right.equalTo(self.view).offset(-20.0);
-            make.top.equalTo(_button2.mas_bottom).offset(10.0).priorityHigh();
-            make.top.equalTo(_button1.mas_bottom).offset(10.0).priorityMedium();
-            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priorityLow();
 //            make.top.equalTo(_button2.mas_bottom).offset(10.0);
-//            make.top.equalTo(_button1.mas_bottom).offset(10.0).priority(2);
-//            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priority(1);
+//            make.top.equalTo(_button1.mas_bottom).offset(10.0).priorityMedium();
+//            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priorityLow();
+            make.top.equalTo(_button2.mas_bottom).offset(10.0).priority(3);
+            make.top.equalTo(_button1.mas_bottom).offset(10.0).priority(2);
+            make.top.equalTo(self.mas_topLayoutGuide).offset(100.0).priority(1);
             
         }];
     }

@@ -14,6 +14,7 @@
 #import "CDConstraintsPriorityVC.h"
 #import "CDMasnoryBasicVC.h"
 #import "CDMasonryDebugModeVC.h"
+#import "CDMasonryCompressionVC.h"
 #import "Masonry.h"
 
 @interface CDMainTestVCViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -63,6 +64,10 @@
     AQMasnoryUsageVC *masnoryUsageVC = [[AQMasnoryUsageVC alloc] init];
     masnoryUsageVC.title = @"Masnory使用 - 数组分类扩展";
     [self.funcViewControllers addObject:masnoryUsageVC];
+    
+    CDMasonryCompressionVC *compressionVC = [[CDMasonryCompressionVC alloc] init];
+    compressionVC.title = @"Masnory使用 - 抗压缩和抗拉伸";
+    [self.funcViewControllers addObject:compressionVC];
     
     CDAutoCountHeightVC *autoVC = [[CDAutoCountHeightVC alloc] init];
     autoVC.title = @"Masnory使用 - 自动计算Cell高度";
@@ -117,6 +122,8 @@
             make.left.equalTo(self.view);
             make.right.equalTo(self.view);
             make.bottom.equalTo(self.view);
+            
+//            make.edges.equalTo(self.view);
         }];
     }
     return _tabelViewMain;

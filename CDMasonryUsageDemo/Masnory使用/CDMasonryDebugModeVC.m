@@ -47,7 +47,8 @@
             make.left.equalTo(self.view).offset(20.0);
             make.right.equalTo(self.view).offset(-20.0);
             make.top.equalTo(self.mas_topLayoutGuide).offset(50.0);
-            make.height.equalTo(@60.0);
+            make.height.greaterThanOrEqualTo(@60.0);
+            make.bottom.equalTo(self.view).offset(200.0);
         }];
         _button1.mas_key = @"(self.button1)";
     }
