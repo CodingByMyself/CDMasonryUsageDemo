@@ -141,11 +141,11 @@
 		370A7D701FDFD5BF00A7157F /* 自动计算高度 */ = {
 			isa = PBXGroup;
 			children = (
-				370A7D771FDFDAF000A7157F /* dataSourceList.plist */,
 				370A7D711FDFD60B00A7157F /* CDAutoCountHeightVC.h */,
 				370A7D721FDFD60B00A7157F /* CDAutoCountHeightVC.m */,
 				370A7D741FDFD63D00A7157F /* CDAutoTestCell.h */,
 				370A7D751FDFD63D00A7157F /* CDAutoTestCell.m */,
+				370A7D771FDFDAF000A7157F /* dataSourceList.plist */,
 			);
 			path = "自动计算高度";
 			sourceTree = "<group>";

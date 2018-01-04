@@ -19,14 +19,15 @@
 // 当前cell类型的预估高度
 + (CGFloat)cellEstimatedHeightForTheData:(NSString *)detail
 {
-    UILabel *detailLabel = [[UILabel alloc] init];
-    detailLabel.font = [UIFont systemFontOfSize:13.0];
-   
-    detailLabel.text = detail;
+    static CDAutoTestCell *cell;
+    if (cell == nil) {
+        cell = [[CDAutoTestCell alloc] init];
+    }
+    cell.detailLabel.text = detail;
     
-    CGFloat autoEsttimated = [detailLabel textRectForBounds:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width - 15.0 - 70.0 - 20.0*2 , CGFLOAT_MAX) limitedToNumberOfLines:0].size.height;
+    CGSize detailLabelTextSize = [cell.detailLabel textRectForBounds:CGRectMake(0, 0, SCREEN_WIDTH - 15.0 - 70.0 - 20.0*2 , CGFLOAT_MAX) limitedToNumberOfLines:0].size;
     
-    return autoEsttimated;
+    return detailLabelTextSize.height;
 }
 
 
@@ -81,7 +82,8 @@
             make.top.equalTo(self.contentView).offset(15.0);
             make.left.equalTo(self.imgviewlogo.mas_right).offset(15.0);
             make.right.equalTo(self.contentView).offset(-15.0);
-            make.height.mas_lessThanOrEqualTo(50.0);
+//            make.height.mas_lessThanOrEqualTo(50.0);
+            make.bottom.equalTo(self.detailLabel.mas_top).offset(-10.0);
         }];
     }
     return _titleLabel;
@@ -97,7 +99,7 @@
         
         [self.contentView addSubview:_detailLabel];
         [_detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.titleLabel.mas_bottom).offset(10.0);
+            make.top.equalTo(self.titleLabel.mas_bottom);
             make.left.equalTo(self.imgviewlogo.mas_right).offset(20.0);
             make.right.equalTo(self.contentView).offset(-20.0);
             make.bottom.equalTo(self.contentView).offset(-20.0);
